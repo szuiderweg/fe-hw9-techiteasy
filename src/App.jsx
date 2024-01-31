@@ -2,6 +2,7 @@ import './App.css';
 import {inventory} from './constants/inventory.js';
 import {tvSold} from './helpers/tvSold.js';
 import {tvBought} from './helpers/tvBought.js';
+import {tvCurrentStock} from "./helpers/tvCurrentStock.js";
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
 
                 <article>
                     <h3>Aantal te verkopen producten</h3>
-                    <p>##</p>
+                    <p>{tvCurrentStock(inventory)}</p>
                 </article>
             </div>
         </section>
