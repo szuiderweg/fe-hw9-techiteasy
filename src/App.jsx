@@ -3,7 +3,7 @@ import {inventory, bestSellingTv} from './constants/inventory.js';
 import {tvSold} from './helpers/tvSold.js';
 import {tvBought} from './helpers/tvBought.js';
 import {tvCurrentStock} from './helpers/tvCurrentStock.js';
-import {topTvTitle} from './helpers/topTvHelpers.js'
+import {topTvPrice, topTvTitle} from './helpers/topTvHelpers.js'
 
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
                   <div><img src="/" alt="tv-plaatje"/></div>
                   <div>
                       <p>{topTvTitle(bestSellingTv)}</p>
-                      <p>prijs</p>
+                      <p>{topTvPrice(bestSellingTv.price)}</p>
                       <p>afmetingen</p>
                       <p>feature bolletjes</p>
                   </div>
