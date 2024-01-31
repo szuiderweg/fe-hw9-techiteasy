@@ -1,4 +1,8 @@
 import './App.css';
+import {inventory} from './constants/inventory.js';
+import {tvSold} from './helpers/tvSold.js';
+import {tvBought} from './helpers/tvBought.js';
+
 
 function App() {
   return (
@@ -12,12 +16,13 @@ function App() {
             <div>
                 <article>
                     <h3>Aantal verkochte producten</h3>
-                    <p>##</p>
+
+                    <p>{tvSold(inventory)}</p>
                 </article>
 
                 <article>
                     <h3>Aantal ingekochte producten</h3>
-                    <p>##</p>
+                    <p>{tvBought(inventory)}</p>
                 </article>
 
                 <article>
