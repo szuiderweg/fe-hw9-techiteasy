@@ -1,8 +1,9 @@
 import './App.css';
-import {inventory} from './constants/inventory.js';
+import {inventory, bestSellingTv} from './constants/inventory.js';
 import {tvSold} from './helpers/tvSold.js';
 import {tvBought} from './helpers/tvBought.js';
-import {tvCurrentStock} from "./helpers/tvCurrentStock.js";
+import {tvCurrentStock} from './helpers/tvCurrentStock.js';
+import {topTvTitle} from './helpers/topTvHelpers.js'
 
 
 function App() {
@@ -36,9 +37,9 @@ function App() {
           <section>
               <h2>Best verkochte tv</h2>
               <article>
-                  <div><img src="/" alt="tv"/></div>
+                  <div><img src="/" alt="tv-plaatje"/></div>
                   <div>
-                      <p>productnaam</p>
+                      <p>{topTvTitle(bestSellingTv)}</p>
                       <p>prijs</p>
                       <p>afmetingen</p>
                       <p>feature bolletjes</p>
