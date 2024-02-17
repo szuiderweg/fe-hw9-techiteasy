@@ -24,7 +24,7 @@ export function topTvSize(tv){
   //2: voor alle afmetingen in het array availableSizes:
   for(let n = 0; n < tv.availableSizes.length;n++){
 
-    //3: als n > 0: voeg '|' toe, zodat iedere iteratie behalve de eerste daarmee begint
+    //3: iedere iteratie behalve de eerste begint met " | " .
     if(n > 0){
       sizeOptions += " | ";
     }

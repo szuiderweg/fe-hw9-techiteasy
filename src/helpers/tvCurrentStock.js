@@ -4,7 +4,7 @@
 import {tvBought} from "./tvBought.js";
 import {tvSold} from "./tvSold.js";
 
-export function tvCurrentStock(inventory){
+export function tvCurrentStock(inventory,bestSellingTv){
     //te verkopen tv's = alle original stock minus alle verkochte tv's
-    return tvBought(inventory) - tvSold(inventory);
+    return tvBought(inventory,bestSellingTv) - tvSold(inventory,bestSellingTv);
 }

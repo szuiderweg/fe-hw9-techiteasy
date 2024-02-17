@@ -1,1 +1,156 @@
-/* hier kan ik het beste de styling maken voor HW9*/
+/*////////////////////////
+    Table of Contents
+	1. Imports and CSS reset
+	2. Declaration of variables
+	3. Global Styles
+	4. General typography
+	5. Reusable items
+	6. Layout
+	7. Media queries
+////////////////////////*/
+/*------ 1 imports and reset -----*/
+/*CSS reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*------ 2 declaration of variables -----*/
+/*       not used yet         */
+
+/*------ 3 Global styles -----*/
+body {
+    margin: 3em;
+}
+
+/*------ 4 General typograpghy-----*/
+
+/*default font size*/
+html {
+    font-size: 24px;
+}
+
+/*global type typography*/
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 3em;
+}
+
+h3 {
+
+}
+
+/*------ 5 Reusable items -----*/
+/* button styling*/
+button{
+    padding: 0.5em;
+    font-size: 1em;
+    background-color: aliceblue;
+    border:2px solid dimgrey;
+    border-radius: 0.25em;
+}
+
+button:hover{
+    color: steelblue;
+    border: 2px solid steelblue;
+}
+
+
+/*------ 6 Layout and styling per Area -----*/
+/*6.1 sales overview area*/
+.salesOverview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*border-style: dotted ;*/
+}
+
+.salesOverview > article{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 0;
+    flex-shrink: 1;
+    gap: 2.5em;
+
+    border: 2px solid;
+    border-radius: 0.25em;
+    padding: 1em;
+}
+    /* kleurtjes van de 3 overview blokjes, met id-selectors op de articles*/
+#ovGreen{
+    color: seagreen;
+    background-color:mintcream;
+}
+
+#ovBlue{
+        color: steelblue;
+        background-color: aliceblue;
+    }
+
+#ovOrange{
+    color: chocolate;
+    background-color: linen;
+}
+
+/* 6.2 best selling tv area block*/
+.bestTv{
+    border: 2px solid dimgrey;
+    background-color: #e8e8e8;
+    padding: 2em;
+    border-radius: 0.25em;
+
+    display: flex;
+    gap: 2em;
+}
+/*selecteer alleen de div met het plaatje van de tv erin om die een afmeting te geven*/
+.bestTv div:first-child{
+    flex-basis: 12em;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.tvImg{
+    width: 100%;
+}
+
+
+/*best selling tv specifications*/
+.tvSpecs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+/*features with checkmarks*/
+.bestTv ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.3em;
+}
+
+.bestTv li{
+    display: flex;
+    align-items: baseline;
+    gap: 0.3em;
+}
+
+.check{
+    height: 0.8em;
+}
+
+/*6.3 buttons    */
+.sortButtons{
+    display: flex;
+    gap: 2em;
+    margin-top: 2em;
+}
