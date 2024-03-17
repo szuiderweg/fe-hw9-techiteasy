@@ -1,4 +1,8 @@
-import {bestSellingTv, inventory} from "../constants/inventory.js";
+//import {inventory} from "../constants/inventory.js";
+// todo: IS het nodig?  omschrijven naar helper: inventory import eruit en geef mee als argument aan functies
+//todo: deelopdrachten omschrijven naar export functies
+//todo in app.jsx: import van dit bestand toevoegen
+
 
 //1a -Gebruik een array-methode om een array te maken met daarin alle tv-type namen. Log de uitkomst in de console.
 console.log(inventory);//test of inventory array goed binnenkomt
@@ -64,3 +68,10 @@ const ambi = inventory.filter(tv =>{
     return false;
 });
 console.log(ambi);
+
+//oefenen om de options van alle tv's te tonen
+
+
+
+
+

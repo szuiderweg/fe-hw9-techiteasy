@@ -152,5 +152,34 @@ button:hover{
 .sortButtons{
     display: flex;
     gap: 2em;
-    margin-top: 2em;
+    /*margin-top: 1em;*/
+}
+
+/*6.4 alle tv's lijst */
+.allTvsLi{
+    list-style-type: none;/* bullet points uitzetten*/
+}
+
+.allTvs{
+    /*dit blokje heeft geen achtergrond of randje*/
+    /*border: 2px solid dimgrey;*/
+    /*background-color: #e8e8e8;*/
+    padding: 2em;
+    /*border-radius: 0.25em;*/
+
+    display: flex;
+    gap: 2em;
+}
+
+/*selecteer alleen de div met het plaatje van de tv erin om die een afmeting te geven*/
+.allTvs div:first-child{
+    flex-basis: 12em;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+/*class voor dynamische checkmarks van de tv options*/
+.optionsList{
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.3em;
 }
