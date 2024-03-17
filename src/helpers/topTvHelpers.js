@@ -13,7 +13,7 @@ export function topTvPrice(price) {
 }
 
 export function topTvSize(tv){
-  //in: een tv object: bv de bestSellingTv of een tv uit  inventory
+  //in: een tv object : bv de bestSellingTv of een tv uit  inventory
   //uit: een string met alle afmetingen in inches en omgerekend naar cm
 
   //aanpak: we gaan werken met een String die iedere met iteratie van de for-loop groeit door een beschikbare schermgrootte aan toe te voegen in het gewenste format.
